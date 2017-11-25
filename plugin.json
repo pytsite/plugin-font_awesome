@@ -1,0 +1,21 @@
+{
+  "name": "font_awesome",
+  "version": "1.0",
+  "description": {
+    "en": "Font Awesome",
+    "ru": "Font Awesome",
+    "uk": "Font Awesome"
+  },
+  "url": "https://github.com/pytsite/plugin-font_awesome",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": [
+      "assetman"
+    ]
+  }
+}
