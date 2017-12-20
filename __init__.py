@@ -16,3 +16,10 @@ def plugin_load():
     assetman.library('font-awesome', [
         'font_awesome@css/font-awesome.css'
     ])
+
+
+def plugin_install():
+    from plugins import assetman
+
+    plugin_load()
+    assetman.build(__name__)
