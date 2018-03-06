@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.1.5 (2018-03-06)
+
+JS module fixed.
+
+
 ### 1.1.4 (2018-03-06)
 
 Assetman's task definition fixed.
