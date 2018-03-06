@@ -6,24 +6,19 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def _register_assetman_resources():
+def plugin_load():
     from plugins import assetman
 
-    if not assetman.is_package_registered(__name__):
-        assetman.register_package(__name__)
-        assetman.t_css(__name__)
-        assetman.t_copy_static(__name__)
-        assetman.js_module('font-awesome', __name__ + '@font-awesome')
-        assetman.library('font-awesome', [
-            'font_awesome@css/font-awesome.css'
-        ])
-
-    return assetman
+    assetman.register_package(__name__)
+    assetman.t_css(__name__)
+    assetman.t_copy_static(__name__)
+    assetman.js_module('font-awesome', __name__ + '@font-awesome')
+    assetman.library('font-awesome', [
+        'font_awesome@css/font-awesome.css'
+    ])
 
 
 def plugin_install():
-    _register_assetman_resources().build(__name__)
+    from plugins import assetman
 
-
-def plugin_load():
-    _register_assetman_resources()
+    assetman.build(__name__)
