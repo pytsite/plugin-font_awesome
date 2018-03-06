@@ -10,6 +10,7 @@ def plugin_load():
     from plugins import assetman
 
     assetman.register_package(__name__)
+    assetman.t_js(__name__)
     assetman.t_css(__name__)
     assetman.t_copy_static(__name__)
     assetman.js_module('font-awesome', __name__ + '@font-awesome')
