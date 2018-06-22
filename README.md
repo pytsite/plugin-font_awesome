@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0 (2018-03-22)
+
+Font Awesome version 5.1 added.
+
+
 ### 1.1.5 (2018-03-06)
 
 JS module fixed.
